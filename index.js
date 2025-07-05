@@ -8,6 +8,7 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
   res.send('Bot de WhatsApp en Node.js está funcionando ✅');
 });
+// Esto es solo una prueba para forzar redeploy
 
 app.post('/webhook', (req, res) => {
   const mensaje = req.body.message?.text?.body?.toLowerCase() || "";
